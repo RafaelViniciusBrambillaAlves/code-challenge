@@ -4,18 +4,18 @@
 
 Este projeto de Engenharia de Dados baseado no desafio da vaga de estágio da Indicum, utiliza uma arquitetura baseada em contêineres para implementar um pipeline de dados robusto e escalável. Ele integra diversas tecnologias, incluindo Apache Airflow, PostgreSQL, Python e Meltano, permitindo a extração, transformação e carga (ETL) eficiente de dados.
 
-Para uma descrição detalhada do projeto [clique aqui](link_para_a_descricao_detalhada).
+Para uma descrição detalhada do projeto [clique aqui](https://github.com/techindicium/code-challenge).
 
 ## Tecnologias e Linguagens Utilizadas
 
 Este projeto utiliza uma variedade de linguagens e tecnologias para garantir um fluxo de trabalho eficiente e escalável. Abaixo estão listadas as principais tecnologias utilizadas:
 
-### 1. ![Python](https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg) **Python**
-### 2. ![SQL](https://raw.githubusercontent.com/devicons/devicon/master/icons/sql/sql-original.svg) **SQL**
-### 3. ![Apache Airflow](https://raw.githubusercontent.com/devicons/devicon/master/icons/apacheairflow/apacheairflow-original.svg)**Apache Airflow**
-### 4. ![PostgreSQL](https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg) **PostgreSQL**
-### 5. ![Docker](https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg) **Docker**
-### 6. ![Meltano](https://raw.githubusercontent.com/meltano/meltano/main/docs/images/logo.png) **Meltano**
+### 1. <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="20" height="20"> **Python**
+### 2. <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sql/sql-original.svg" width="20" height="20"> **SQL**
+### 3. <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apacheairflow/apacheairflow-original.svg" width="20" height="20"> **Apache Airflow**
+### 4. <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="20" height="20"> **PostgreSQL**
+### 5. <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="20" height="20"> **Docker**
+### 6. <img src="https://raw.githubusercontent.com/meltano/meltano/main/docs/images/logo.png" width="20" height="20"> **Meltano**
 
 ## Proposta de solução
 A solução é divida em três etapas:
@@ -75,14 +75,14 @@ Siga os passos abaixo para instalar e executar o projeto.
 Abra o terminal e execute o comando abaixo para clonar o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-projeto.git
+git clone https://github.com/RafaelViniciusBrambillaAlves/code-challenge
 ```
 ### 2. Acesse o diretório do projeto
 
 Entre no diretório do projeto clonado:
 
 ```bash
-cd seu-projeto
+cd code-challenge
 ```
 ### 3. Configure o ambiente com Docker
 
