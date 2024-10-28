@@ -1,0 +1,72 @@
+version: 1
+default_environment: dev
+project_id: 289b1d22-0595-4575-bf1d-b599be5fc34c
+environments:
+- name: dev
+- name: staging
+- name: prod
+
+plugins:
+  extractors:
+  - name: tap-postgres
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-postgres.git
+    config:
+      host: db-initial
+      database: initial
+      default_replication_method: FULL_TABLE
+      user: postgres
+      port: 5432
+      filter_schemas:
+      - public
+      password: postgres
+
+  - name: tap-csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+
+  - name: tap-csv-part1
+    inherit_from: tap-csv
+    config:
+      add_metadata_columns: false
+      csv_files_definition: files-definitions-part1.json
+
+  - name: tap-csv-part2
+    inherit_from: tap-csv
+    config: 
+      add_metadata_columns: false
+      csv_files_definition: files-definitions-part2.json  
+
+  loaders:
+  - name: target-csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/target-csv.git
+    config:
+      destination_path: ../data
+
+  - name: target-postgres
+    variant: meltanolabs
+    pip_url: meltanolabs-target-postgres
+    config:
+      activate_version: false
+      add_record_metadata: false
+      database: Northwind
+      host: db-final
+      user: postgres
+      port: 5433
+      sqlalchemy_url: postgresql://postgres:postgres@db-final:5432/Northwind
+      password: postgres
+
+jobs:
+
+- name: extract-postgres
+  tasks:
+  - tap-postgres target-csv
+
+- name: extract-csv
+  tasks:
+  - tap-csv-part1 target-csv
+
+- name: load-postgres
+  tasks:
+  - tap-csv-part2 target-postgres

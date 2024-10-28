@@ -1,0 +1,93 @@
+[
+  {
+    "entity": "order_details",
+    "path": "../data/csv/2024-10-28/order_details.csv",
+    "keys": [
+      "order_id",
+      "product_id"
+    ]
+  },
+  {
+    "entity": "categories",
+    "path": "../data/postgres/categories/2024-10-28/public-categories.csv",
+    "keys": [
+      "category_id"
+    ]
+  },
+  {
+    "entity": "customers",
+    "path": "../data/postgres/customers/2024-10-28/public-customers.csv",
+    "keys": [
+      "customer_id"
+    ]
+  },
+  {
+    "entity": "employee_territories",
+    "path": "../data/postgres/employee_territories/2024-10-28/public-employee_territories.csv",
+    "keys": [
+      "employee_id",
+      "territory_id"
+    ]
+  },
+  {
+    "entity": "employees",
+    "path": "../data/postgres/employees/2024-10-28/public-employees.csv",
+    "keys": [
+      "employee_id"
+    ]
+  },
+  {
+    "entity": "orders",
+    "path": "../data/postgres/orders/2024-10-28/public-orders.csv",
+    "keys": [
+      "order_id",
+      "customer_id",
+      "employee_id"
+    ]
+  },
+  {
+    "entity": "products",
+    "path": "../data/postgres/products/2024-10-28/public-products.csv",
+    "keys": [
+      "product_id",
+      "supplier_id",
+      "category_id"
+    ]
+  },
+  {
+    "entity": "region",
+    "path": "../data/postgres/region/2024-10-28/public-region.csv",
+    "keys": [
+      "region_id"
+    ]
+  },
+  {
+    "entity": "shippers",
+    "path": "../data/postgres/shippers/2024-10-28/public-shippers.csv",
+    "keys": [
+      "shipper_id"
+    ]
+  },
+  {
+    "entity": "suppliers",
+    "path": "../data/postgres/suppliers/2024-10-28/public-suppliers.csv",
+    "keys": [
+      "supplier_id"
+    ]
+  },
+  {
+    "entity": "territories",
+    "path": "../data/postgres/territories/2024-10-28/public-territories.csv",
+    "keys": [
+      "territory_id",
+      "region_id"
+    ]
+  },
+  {
+    "entity": "us_states",
+    "path": "../data/postgres/us_states/2024-10-28/public-us_states.csv",
+    "keys": [
+      "state_id"
+    ]
+  }
+]
