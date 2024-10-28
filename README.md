@@ -1,8 +1,8 @@
-# Projeto de Engenharia de Dados
+# Indicium Tech Code Challenge
 
 ## Introdução
 
-Este projeto de Engenharia de Dados baseado no desafio da vaga de estágio da Indicum, utiliza uma arquitetura baseada em contêineres para implementar um pipeline de dados robusto e escalável. Ele integra diversas tecnologias, incluindo Apache Airflow, PostgreSQL, Python e Meltano, permitindo a extração, transformação e carga (ETL) eficiente de dados.
+Este projeto de Engenharia de Dados baseado no desafio da vaga de estágio da Indicium, utiliza uma arquitetura baseada em contêineres para implementar um pipeline de dados robusto e escalável. Ele integra diversas tecnologias, incluindo Apache Airflow, PostgreSQL, Python e Meltano, permitindo a extração, transformação e carga (ETL) eficiente de dados.
 
 Para uma descrição detalhada do projeto [clique aqui](https://github.com/techindicium/code-challenge).
 
