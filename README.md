@@ -122,10 +122,22 @@ Para testar de maneira automática todo o fluxo das DAGs, na DAG `etl_part1`, cl
 
 Para testar a DAG `etl_part2` de maneira manual, clique em **Trigger DAG** e insira a data no formato válido (YYYY-MM-DD).
 
+### Final 
+
+Para ver o resultado final, entre no container do banco final utilizando o seguinte comando:
+
+```bash
+docker exec -it code-challenge-db-final-1 bash
+```
+
+Em seguida, execute a query que está na pasta query/query.sql, que mostra seus pedidos e detalhes. O arquivo .csv com o resultado pode ser encontrado na pasta query/result/result.csv.
+
 
 ## Desafios e Opiniões sobre o desafio
 
 O desafio foi bem legal e me permitiu aplicar conhecimentos em diversas ferramentas para conseguir completar o projeto. Foi interessante ver como cada tecnologia se conecta e contribui para um fluxo de trabalho eficiente.
+
+Utilizei o formato de arquivo `.csv` por ser simples e fácil de visualizar.
 
 A maior dificuldade que enfrentei foi integrar o Apache Airflow com o Meltano, pois ambos têm suas próprias configurações e requisitos. Entender como fazer essa integração funcionar corretamente exigiu um pouco de tempo e pesquisa.
 
